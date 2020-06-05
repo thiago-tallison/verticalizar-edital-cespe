@@ -1,6 +1,6 @@
 /* eslint-disable no-useless-escape */
 function separarMateriasEmNovaLinha(data) {
-  var re = /([A-ZÇÃÕÂÊÎÔÛÁÉÍÓÚÀ\s]+:\s)/g;
+  var re = /([A-ZÇÃÕÂÊÎÔÛÁÉÍÓÚÀ\s\-]+:\s)/g;
 
   data = data.replace(re, function (matched) {
     let disciplina = `\n\n\n${matched.trim()}\n`;

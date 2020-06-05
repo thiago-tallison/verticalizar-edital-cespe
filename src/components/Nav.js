@@ -1,17 +1,31 @@
-import React from 'react'
-import './Nav.css';
+import { Link } from "react-router-dom";
+import React from "react";
+
+import "./Nav.css";
+import { ReactComponent as GithubLogo } from "./icons8-github.svg";
 
 export const Nav = () => {
   return (
     <nav className="navbar">
       <ul className="links">
-        <li className="link"><a href="localhost:3000" id="inicio">Início</a></li>
-        <li className="link"><a href="localhost:3000" id="instrucoes">Instruções</a></li>
-        <li className="link"><a href="localhost:3000" id="sobre">Instruções</a></li>
+        <li className="link">
+          <Link to="/">Início</Link>
+        </li>
+        <li className="link">
+          <Link to="/instructions">Instruções</Link>
+        </li>
+        <li className="link">
+          <Link to="/examples">Exemplos</Link>
+        </li>
       </ul>
-      <a href="localhost:3000" className="social">
-        <i className="fa fa-github" aria-hidden="true"></i>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/thiago-tallison/verticalizar-edital"
+        className="social"
+      >
+        <GithubLogo className="git-logo" />
       </a>
     </nav>
-  )
-}
+  );
+};

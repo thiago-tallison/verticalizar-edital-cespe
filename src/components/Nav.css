@@ -31,8 +31,13 @@
   padding-left: 0.5rem;
   text-decoration: none;
   color: hsla(0, 0%, 100%, 0.5);
+  transition: color 0.18s ease;
 }
 
 .navbar > .links .link a:hover {
   color: hsla(0, 0%, 100%, 0.75);
+}
+
+.social {
+  margin: auto 2rem;
 }
