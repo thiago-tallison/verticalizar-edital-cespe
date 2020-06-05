@@ -1,0 +1,27 @@
+.Instructions {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.margin-top {
+  margin-top: 4rem;
+}
+
+.subitem li {
+  list-style-type: none;
+}
+
+ol.instrucoes:first-child {
+  margin-bottom: 0rem;
+}
+
+.divisor {
+  background-color: #c1c1c1;
+  height: 1px;
+  width: 100%;
+  border-radius: 100px;
+}
+
+.observacao-importante {
+  text-indent: 2em;
+}
