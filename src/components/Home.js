@@ -60,6 +60,7 @@ export default class Home extends Component {
         <Input
           copyText={() => {}}
           value={this.state.input}
+          placeholder="Cole as disciplinas do edital aqui. Cuidado para não inserir as páginas do documento."
           onInputChange={this.onInputChange}
           label={"disciplinas do edital"}
           deleteAll={true}
@@ -68,6 +69,7 @@ export default class Home extends Component {
         <Input
           copyText={this.copyText}
           value={this.state.output}
+          placeholder={""}
           onInputChange={this.onOutputChange}
           formatedText={this.state.formatedText}
           label={"resultado"}

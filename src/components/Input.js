@@ -16,6 +16,10 @@ export const Input = (props) => {
     e.target.focus();
   };
 
+  const deletarTudo = (e) => {
+    props.onInputChange("");
+  };
+
   return (
     <div className="container">
       <div className="row">
@@ -29,7 +33,7 @@ export const Input = (props) => {
               name=""
               id=""
               rows="10"
-              placeholder="Cole as disciplinas do edital aqui. Cuidado para não inserir as páginas do documento ao copiar o texto."
+              placeholder={props.placeholder}
               value={props.value}
               onChange={handleChange}
               ref={textAreaRef}
@@ -44,6 +48,7 @@ export const Input = (props) => {
 
             {props.deleteAll ? (
               <FontAwesomeIcon
+                onClick={deletarTudo}
                 className="icone-apagar-tudo"
                 icon={faTrashAlt}
               />
