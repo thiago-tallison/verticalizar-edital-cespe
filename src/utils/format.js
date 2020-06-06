@@ -43,7 +43,7 @@ function sanitizarDados(data) {
   }
 
   function removerNumeroPagina(data) {
-    var re = /^\d+$/g;
+    var re = /\n\s+\d+\n/g;
     data = data.replace(re, "");
     return data;
   }
@@ -52,8 +52,8 @@ function sanitizarDados(data) {
     return data.replace(/\n/g, " ");
   }
 
-  data = removerEspacosDuplos(data);
   data = removerNumeroPagina(data);
+  data = removerEspacosDuplos(data);
   data = removerQuebraLinha(data);
   data = data.trim();
   return data;

@@ -1,5 +1,5 @@
 const examples = {
-  "Polícia Rodoviária Federal": `23.2 CONHECIMENTOS
+  "Polícia Rodoviária Federal - 2019": `23.2 CONHECIMENTOS
   23.2.1 Nas provas, serão avaliados, além de habilidades, conhecimentos conforme descritos a seguir.
   BLOCO I
   LÍNGUA PORTUGUESA: 1 Compreensão e interpretação de textos de gêneros variados. 2 Reconhecimento
@@ -23,7 +23,7 @@ const examples = {
   e gráficos apresentados em diferentes linguagens e representações. 7.2 Cálculo de médias e análise de
   desvios de conjuntos de dados. 8 Noções básicas de teoria dos conjuntos. 9 Análise e interpretação de
   diferentes representações de figuras planas, como desenhos, mapas e plantas. 9.1 Utilização de escalas. 
-  38
+  
   9.2 Visualização de figuras espaciais em diferentes posições. 9.3 Representações bidimensionais de
   projeções, planificações e cortes. 10 Métrica. 10.1 Áreas e volumes. 10.2 Estimativas. 10.3 Aplicações.
   INFORMÁTICA: 1 Conceito de internet e intranet. 2 Conceitos e modos de utilização de tecnologias,
@@ -65,7 +65,7 @@ const examples = {
   NOÇÕES DE DIREITO ADMINISTRATIVO: 1 Noções de organização administrativa. 1.1 Centralização,
   descentralização, concentração e desconcentração. 1.2 Administração direta e indireta. 1.3 Autarquias,
   fundações, empresas públicas e sociedades de economia mista. 2 Ato administrativo. 2.1 Conceito, 
-  39
+  
   requisitos, atributos, classificação e espécies. 3 Agentes públicos. 3.1 Legislação pertinente. 3.1.1 Lei nº
   8.112/1990 e suas alterações. 3.1.2 Disposições constitucionais aplicáveis. 3.2 Disposições doutrinárias.
   3.2.1 Conceito. 3.2.2 Espécies. 3.2.3 Cargo, emprego e função pública. 4 Poderes administrativos. 4.1
@@ -143,7 +143,7 @@ const examples = {
   governo. 3 Defesa do Estado e das instituições democráticas: segurança pública; organização da segurança
   pública. 4 Ordem social: base e objetivos da ordem social; seguridade social; meio ambiente; família, criança,
   adolescente, idoso, índio.
-  60
+  
   NOÇÕES DE DIREITO PENAL E DE DIREITO PROCESSUAL PENAL: 1 Princípios básicos. 2 Aplicação da lei penal.
   2.1 A lei penal no tempo e no espaço. 2.2 Tempo e lugar do crime. 2.3 Territorialidade e extraterritorialidade
   da lei penal. 3 O fato típico e seus elementos. 3.1 Crime consumado e tentado. 3.2 Ilicitude e causas de
@@ -188,7 +188,7 @@ const examples = {
   segurança (antivírus, firewall, anti-spyware etc.). 5 Computação na nuvem (cloud computing). 6 Fundamentos
   da Teoria Geral de Sistemas. 7 Sistemas de informação. 7.1 Fases e etapas de sistema de informação. 8 Teoria
   da informação. 8.1 Conceitos de informação, dados, representação de dados, de conhecimentos, segurança 
-  61
+  
   e inteligência. 9 Banco de dados. 9.1 Base de dados, documentação e prototipação. 9.2 Modelagem
   conceitual: abstração, modelo entidade-relacionamento, análise funcional e administração de dados. 9.3
   Dados estruturados e não estruturados. 9.4 Banco de dados relacionais: conceitos básicos e características.
@@ -213,6 +213,68 @@ const examples = {
   resultado de exercício: conceito, objetivo, composição. 11 Lei nº 6.404/1976 e suas alterações, legislação
   complementar e pronunciamentos do Comitê de Pronunciamentos Contábeis (CPC). 12 Norma Brasileira de
   Contabilidade - NBC TSP Estrutura Conceitual, de 23 de setembro de 2016.`,
+
+  "Técnico do Seguro Social": `14.2.1.3 CONHECIMENTOS BÁSICOS PARA O CARGO TÉCNICO DO SEGURO SOCIAL
+  ÉTICA NO SERVIÇO PÚBLICO: 1 Código de Ética Profissional do Servidor Público Civil do Poder Executivo
+  Federal: Decreto nº 1.171/1994 e Decreto nº 6.029/2007.
+  REGIME JURÍDICO ÚNICO: 1 Lei 8.112/1990 e alterações, direitos e deveres do Servidor Público. 2 O
+  servidor público como agente de desenvolvimento social. 3 Saúde e qualidade de vida no serviço público.
+  NOÇÕES DE DIREITO CONSTITUCIONAL: 1 Direitos e deveres fundamentais: direitos e deveres individuais e
+  coletivos; direito à vida, à liberdade, à igualdade, à segurança e à propriedade; direitos sociais;
+  nacionalidade; cidadania; garantias constitucionais individuais; garantias dos direitos coletivos, sociais e
+  políticos. 2 Administração Pública (artigos de 37 a 41, capítulo VII, Constituição Federal de 1988 e
+  atualizações).
+  NOÇÕES DE DIREITO ADMINISTRATIVO: 1 Estado, governo e Administração Pública: conceitos, elementos,
+  poderes e organização; natureza, fins e princípios. 2 Direito Administrativo: conceito, fontes e princípios. 3
+  Organização administrativa da União; administração direta e indireta. 4 Agentes públicos: espécies e
+  classificação; poderes, deveres e prerrogativas; cargo, emprego e função públicos; regime jurídico único:
+  provimento, vacância, remoção, redistribuição e substituição; direitos e vantagens; regime disciplinar;
+  responsabilidade civil, criminal e administrativa. 5 Poderes administrativos: poder hierárquico; poder
+  disciplinar; poder regulamentar; poder de polícia; uso e abuso do poder. 6 Ato administrativo: validade,
+  eficácia; atributos; extinção, desfazimento e sanatória; classificação, espécies e exteriorização; vinculação e
+  discricionariedade. 7 Serviços Públicos: conceito, classificação, regulamentação e controle; forma, meios e
+  requisitos; delegação: concessão, permissão, autorização. 8 Controle e responsabilização da administração:
+  controle administrativo; controle judicial; controle legislativo; responsabilidade civil do Estado. Lei nº 
+  
+  8.429/1992 (sanções aplicáveis aos agentes públicos nos casos de enriquecimento ilícito no exercício de
+  mandato, cargo, emprego ou função da administração pública direta, indireta ou fundacional e dá outras
+  providências). 9 Lei n°9.784/1999 (Lei do Processo Administrativo).
+  LÍNGUA PORTUGUESA: 1 Compreensão e interpretação de textos. 2 Tipologia textual. 3 Ortografia oficial. 4
+  Acentuação gráfica. 5 Emprego das classes de palavras. 6 Emprego do sinal indicativo de crase. 7 Sintaxe da
+  oração e do período. 8 Pontuação. 9 Concordância nominal e verbal. 10 Regências nominal e verbal. 11
+  Significação das palavras. 12 Redação de correspondências oficiais (conforme Manual de Redação da
+  Presidência da República).
+  RACIOCÍNIO LÓGICO: 1 Conceitos básicos de raciocínio lógico: proposições; valores lógicos das proposições;
+  sentenças abertas; número de linhas da tabela verdade; conectivos; proposições simples; proposições
+  compostas. 2 Tautologia. 3 Operação com conjuntos. 4 Cálculos com porcentagens.
+  NOÇÕES DE INFORMÁTICA: 1 Conceitos de Internet e intranet. 2 Conceitos básicos e modos de utilização
+  de tecnologias, ferramentas, aplicativos e procedimentos de informática. 3 Conceitos e modos de utilização
+  de aplicativos para edição de textos, planilhas e apresentações utilizando-se a suíte de escritório
+  LibreOffice. 4 Conceitos e modos de utilização de sistemas operacionais Windows 7 e 10. 5 Noções básicas
+  de ferramentas e aplicativos de navegação e correio eletrônico. 6 Noções básicas de segurança e proteção:
+  vírus, worms e derivados.
+  14.2.1.4 CONHECIMENTOS ESPECÍFICOS PARA O CARGO TÉCNICO DO SEGURO SOCIAL
+  SEGURIDADE SOCIAL: 1 Seguridade Social. 1.1 Origem e evolução legislativa no Brasil. 1.2 Conceituação. 1.3
+  Organização e princípios constitucionais. 2 Legislação Previdenciária. 2.1 Conteúdo, fontes, autonomia. 2.3
+  Aplicação das normas previdenciárias. 2.3.1 Vigência, hierarquia, interpretação e integração. 3 Regime
+  Geral de Previdência Social. 3.1 Segurados obrigatórios. 3.2 Filiação e inscrição. 3.3 Conceito, características
+  e abrangência: empregado, empregado doméstico, contribuinte individual, trabalhador avulso e segurado
+  especial. 3.4 Segurado facultativo: conceito, características, filiação e inscrição. 3.5 Trabalhadores excluídos
+  do Regime Geral. 4 Empresa e empregador doméstico: conceito previdenciário. 5 Financiamento da
+  Seguridade Social. 5.1 Receitas da União. 5.2 Receitas das contribuições sociais: dos segurados, das
+  empresas, do empregador doméstico, do produtor rural, do clube de futebol profissional, sobre a receita de
+  concursos de prognósticos, receitas de outras fontes. 5.3 Salário-de-contribuição. 5.3.1 Conceito. 5.3.2
+  Parcelas integrantes e parcelas não-integrantes. 5.3.3 Limites mínimo e máximo. 5.3.4 Proporcionalidade.
+  5.3.5 Reajustamento. 5.4 Arrecadação e recolhimento das contribuições destinadas à seguridade social.
+  5.4.1 Competência do INSS e da Secretaria da Receita Federal do Brasil. 5.4.2 Obrigações da empresa e
+  demais contribuintes. 5.4.3 Prazo de recolhimento. 5.4.4 Recolhimento fora do prazo: juros, multa e
+  atualização monetária. 6 Decadência e prescrição. 7 Crimes contra a Seguridade Social. 8 Recurso das
+  decisões administrativas. 9 Plano de Benefícios da Previdência Social: beneficiários, espécies de prestações,
+  benefícios, disposições gerais e específicas, períodos de carência, salário-de-benefício, renda mensal do
+  benefício, reajustamento do valor dos benefícios. 10 Manutenção, perda e restabelecimento da qualidade
+  de segurado. 11 Lei nº 8.212/1991 e alterações. 12 Lei nº 8.213/1991 e alterações. 13 Decreto nº 3.048, de
+  06/05/1999 e alterações. 14 Lei de Assistência Social (LOAS): conteúdo; fontes e autonomia (Lei nº
+  8.742/1993 e Decreto nº 6.214/2007 e alterações).`,
 };
 
 export default examples;
