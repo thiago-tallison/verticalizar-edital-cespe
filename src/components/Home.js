@@ -2,27 +2,33 @@ import React, { Component } from "react";
 
 import "./Home.css";
 
-import { Nav } from "./Nav";
+import { Examples } from "./Examples";
 import { Input } from "./Input";
 import { DownloadEditalButtons } from "./DownloadEditalButtons";
 import Config from "./Config";
 
 import format from "../utils/format";
-import examples from "../utils/examples";
 
 export default class Home extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      input: examples.prf,
+      input: "",
       output: "",
+      shouldShowExamples: this.props.shouldShowExamples,
     };
 
     this.onInputChange = this.onInputChange.bind(this);
     this.onOutputChange = this.onOutputChange.bind(this);
     this.handleOnClickProcessar = this.handleOnClickProcessar.bind(this);
     this.downloadAsCsv = this.downloadAsCsv.bind(this);
+    this.onClose = this.onClose.bind(this);
+  }
+
+  onClose(option) {
+    this.setState({ input: option !== "Selecione" ? option : "" });
+    this.props.handleOnClose();
   }
 
   onInputChange(value) {
@@ -50,6 +56,7 @@ export default class Home extends Component {
   render() {
     return (
       <div className="Home">
+        <Examples onClose={this.onClose} show={this.props.shouldShowExamples} />
         <Input
           copyText={() => {}}
           value={this.state.input}
@@ -65,6 +72,7 @@ export default class Home extends Component {
           formatedText={this.state.formatedText}
           label={"resultado"}
           copy={true}
+          deleteAll={true}
         />
         <div className="container">
           <div className="row">

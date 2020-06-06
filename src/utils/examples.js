@@ -1,5 +1,5 @@
 const examples = {
-  prf: `23.2 CONHECIMENTOS
+  "Polícia Rodoviária Federal": `23.2 CONHECIMENTOS
   23.2.1 Nas provas, serão avaliados, além de habilidades, conhecimentos conforme descritos a seguir.
   BLOCO I
   LÍNGUA PORTUGUESA: 1 Compreensão e interpretação de textos de gêneros variados. 2 Reconhecimento
@@ -106,7 +106,8 @@ const examples = {
   estrutura normativa, fundamentação. 2 Afirmação histórica dos direitos humanos. 3 Direitos humanos e
   responsabilidade do Estado. 4 Direitos humanos na Constituição Federal. 5 Política Nacional de Direitos
   Humanos. 6 A Constituição brasileira e os tratados internacionais de direitos humanos.`,
-  agente_pf: `4.2.4 CARGO 12: AGENTE DE POLÍCIA FEDERAL
+
+  "Agente da Polícia Federal": `4.2.4 CARGO 12: AGENTE DE POLÍCIA FEDERAL
   BLOCO I
   LÍNGUA PORTUGUESA: 1 Compreensão e interpretação de textos de gêneros variados. 2 Reconhecimento de
   tipos e gêneros textuais. 3 Domínio da ortografia oficial. 4 Domínio dos mecanismos de coesão textual. 4.1
