@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import React from "react";
 
 import "./Nav.css";
@@ -9,10 +9,14 @@ export const Nav = (props) => {
     <nav className="navbar">
       <ul className="links">
         <li className="link">
-          <Link to="/">Início</Link>
+          <NavLink activeClassName="active" exact to="/">
+            Início
+          </NavLink>
         </li>
         <li className="link">
-          <Link to="/instructions">Instruções</Link>
+          <NavLink activeClassName="active" exact to="/instructions">
+            Instruções
+          </NavLink>
         </li>
         <li className="link">
           <span onClick={props.onClick}>Exemplos</span>

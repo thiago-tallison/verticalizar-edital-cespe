@@ -1,19 +1,17 @@
 .navbar {
-  min-height: 4rem;
+  min-height: 2rem;
   display: flex;
   flex-flow: row nowrap;
-  padding: 1em 2em;
-  background: #20232a;
+  padding: 0.5em 3em;
+  background: #7952b3;
   justify-content: space-between;
-  position: sticky;
 }
 
 .navbar > .links {
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
   margin: auto 0 auto 2rem;
+  list-style-type: none;
 }
 
 .navbar > .links .link,
@@ -44,4 +42,9 @@
 
 .social {
   margin: auto 2rem;
+}
+
+.active {
+  color: #fff !important;
+  font-weight: 500;
 }
