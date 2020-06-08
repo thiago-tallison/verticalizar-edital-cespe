@@ -8,6 +8,7 @@ import { DownloadEditalButtons } from "./DownloadEditalButtons";
 import Config from "./Config";
 
 import format from "../utils/format";
+import { textToCSV } from "../utils/converter";
 
 export default class Home extends Component {
   constructor(props) {
@@ -50,7 +51,16 @@ export default class Home extends Component {
   }
 
   downloadAsCsv() {
-    console.log("[App.js] downloadAsCsv():");
+    const csvData = textToCSV(this.state.output);
+    if (csvData === "") return;
+    var element = document.createElement("a");
+    element.href =
+      "data:text/plain;charset=utf-8," + encodeURIComponent(csvData);
+    element.setAttribute("download", "Edital.csv");
+    element.style.display = "none";
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
   }
 
   render() {
