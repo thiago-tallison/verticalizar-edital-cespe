@@ -17,13 +17,14 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Nav onClick={handleOnExamplesClick} />
         <Switch>
           <Route path="/instructions">
+            <Nav onClick={handleOnExamplesClick} />
             <Instructions />
           </Route>
 
           <Route path="/">
+            <Nav showExamples onClick={handleOnExamplesClick} />
             <Home
               handleOnClose={handleOnExamplesClick}
               shouldShowExamples={shouldShowExamples}

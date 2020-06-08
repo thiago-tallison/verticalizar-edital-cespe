@@ -5,6 +5,12 @@ import "./Nav.css";
 import { ReactComponent as GithubLogo } from "./icons8-github.svg";
 
 export const Nav = (props) => {
+  const ExamplesNavLink = ({ show }) =>
+    show ? (
+      <li className="link">
+        <span onClick={props.onClick}>Exemplos</span>
+      </li>
+    ) : null;
   return (
     <nav className="navbar">
       <ul className="links">
@@ -18,9 +24,7 @@ export const Nav = (props) => {
             Instruções
           </NavLink>
         </li>
-        <li className="link">
-          <span onClick={props.onClick}>Exemplos</span>
-        </li>
+        <ExamplesNavLink show={props.showExamples} />
       </ul>
       <a
         target="_blank"
