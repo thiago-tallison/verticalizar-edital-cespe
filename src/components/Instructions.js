@@ -18,8 +18,7 @@ export const Instructions = () => {
                     <strong>Obs:</strong> caso a seleção inclua o número da
                     página do documento, considere excluí-la antes de processar
                     o texto. Este comportamento é comum em documentos do tipo
-                    PDF. Além disso, alguns documentos podem remover a seleção,
-                    por isso tenha cuidado ao fazer isto.
+                    PDF.
                   </li>
                 </ul>
               </li>
@@ -45,15 +44,15 @@ export const Instructions = () => {
           </div>
           <div className="divisor offset-by-one ten columns margin-top"></div>
           <div className="offset-by-one ten columns margin-top">
-            <h1>Obeservação importante</h1>
+            <h1>Observações importantes</h1>
             <p className="observacao-importante">
               O algoritmo do site funciona baseado em um padão de formatação de
-              edital. Além disso, as bancas comumente cometem erros que fogem
-              desses padrões. Um erro muito comum, por exemplo: não separar dois
-              tópicos usando um ponto final (.). Esse erro de digitação
-              compromeete o perfeito funcionamento do algoritmo, o qual pode não
-              formatar o texto como o esperado. Assim, recomendamos que confira
-              o resultado obtido antes de usá-lo. Bons estudos, concurseiro
+              edital. Além disso, as bancas comumente cometem erros de digitação
+              que fogem desses padrões. Por exemplo: não separar dois tópicos
+              usando um ponto final. Esse erro de digitação compromete o
+              perfeito funcionamento do algoritmo, o qual pode não formatar o
+              texto conforme o esperado. Assim, recomendamos que confira o
+              resultado obtido. Bons estudos, concurseiro{" "}
               <span role="img" aria-label="emojis">
                 📚☕💪
               </span>
