@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/verticalizar-edital-cespe/static/css/main.29994917.chunk.css",
+    "main.js": "/verticalizar-edital-cespe/static/js/main.b8be6486.chunk.js",
+    "main.js.map": "/verticalizar-edital-cespe/static/js/main.b8be6486.chunk.js.map",
+    "runtime-main.js": "/verticalizar-edital-cespe/static/js/runtime-main.c2506851.js",
+    "runtime-main.js.map": "/verticalizar-edital-cespe/static/js/runtime-main.c2506851.js.map",
+    "static/js/2.5006a9c1.chunk.js": "/verticalizar-edital-cespe/static/js/2.5006a9c1.chunk.js",
+    "static/js/2.5006a9c1.chunk.js.map": "/verticalizar-edital-cespe/static/js/2.5006a9c1.chunk.js.map",
+    "index.html": "/verticalizar-edital-cespe/index.html",
+    "precache-manifest.2eccecf2b9ef47222d5e496adb8ace23.js": "/verticalizar-edital-cespe/precache-manifest.2eccecf2b9ef47222d5e496adb8ace23.js",
+    "service-worker.js": "/verticalizar-edital-cespe/service-worker.js",
+    "static/css/main.29994917.chunk.css.map": "/verticalizar-edital-cespe/static/css/main.29994917.chunk.css.map",
+    "static/js/2.5006a9c1.chunk.js.LICENSE.txt": "/verticalizar-edital-cespe/static/js/2.5006a9c1.chunk.js.LICENSE.txt",
+    "static/media/icons8-github.50ab59f9.svg": "/verticalizar-edital-cespe/static/media/icons8-github.50ab59f9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2506851.js",
+    "static/js/2.5006a9c1.chunk.js",
+    "static/css/main.29994917.chunk.css",
+    "static/js/main.b8be6486.chunk.js"
+  ]
+}
