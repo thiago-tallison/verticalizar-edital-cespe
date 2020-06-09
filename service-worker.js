@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/verticalizar-edital-cespe/precache-manifest.2eccecf2b9ef47222d5e496adb8ace23.js"
+  "/verticalizar-edital-cespe/precache-manifest.300a0e63550c347d4617b2bff3e38d9b.js"
 );
 
 self.addEventListener('message', (event) => {

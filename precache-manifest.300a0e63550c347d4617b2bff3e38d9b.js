@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "65960e633e9177b5a9ad917cc2ce5463",
+    "revision": "933950e04e81699e0c273c576457d161",
     "url": "/verticalizar-edital-cespe/index.html"
   },
   {
