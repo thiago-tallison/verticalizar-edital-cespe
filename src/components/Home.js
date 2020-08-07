@@ -5,7 +5,7 @@ import "./Home.css";
 import { Examples } from "./Examples";
 import { Input } from "./Input";
 import { DownloadEditalButtons } from "./DownloadEditalButtons";
-import Config from "./Config";
+import Config from "./Config/index";
 
 import format from "../utils/format";
 import { textToCSV } from "../utils/converter";
@@ -41,7 +41,7 @@ export default class Home extends Component {
   }
 
   handleOnClickProcessar(configState) {
-    const { espacamento, semNumeracao } = configState;
+    const { tabing: espacamento, noNumeration: semNumeracao } = configState;
     const formatedText = format({
       texto: this.state.input,
       numeracao: semNumeracao,
