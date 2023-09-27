@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import "./App.css";
-import GlobalStyles from "../styles/GlobalStyles";
+import "../globals.css";
+// import GlobalStyles from "../styles/GlobalStyles";
 
 import { Instructions } from "./Instructions";
 import Home from "./Home";
@@ -36,7 +37,6 @@ const App = () => {
           />
         </Route>
       </Switch>
-      <GlobalStyles />
     </BrowserRouter>
   );
 };

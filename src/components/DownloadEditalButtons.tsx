@@ -1,11 +1,18 @@
 import React from "react";
+import { Button } from "./ui/button";
 
-import "./DownloadEditalButtons.css";
-
-export const DownloadEditalButtons = (props) => {
-  return (
-    <button onClick={props.handleOnClick} className="download-button">
-      Download {props.label}
-    </button>
-  );
+type DownloadEditalButtonsProps = {
+  handleOnClick: () => void;
+  label: string;
 };
+
+export function DownloadEditalButtons({
+  handleOnClick,
+  label,
+}: DownloadEditalButtonsProps) {
+  return (
+    <Button variant="outline" onClick={handleOnClick}>
+      Download {label}
+    </Button>
+  );
+}
