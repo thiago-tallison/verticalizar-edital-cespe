@@ -1,10 +1,10 @@
-import React from "react";
-import { Button } from "./ui/button";
+import React from 'react'
+import { Button } from './ui/button'
 
 type DownloadEditalButtonsProps = {
-  handleOnClick: () => void;
-  label: string;
-};
+  handleOnClick: () => void
+  label: string
+}
 
 export function DownloadEditalButtons({
   handleOnClick,
@@ -14,5 +14,5 @@ export function DownloadEditalButtons({
     <Button variant="outline" onClick={handleOnClick}>
       Download {label}
     </Button>
-  );
+  )
 }

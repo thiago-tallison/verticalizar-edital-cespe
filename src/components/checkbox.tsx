@@ -1,10 +1,10 @@
-import React from "react";
-import { Checkbox as ChadCheckbox } from "./ui/checkbox";
+import React from 'react'
+import { Checkbox as ChadCheckbox } from './ui/checkbox'
 
 type Props = {
-  id: string;
-  label: string;
-};
+  id: string
+  label: string
+}
 
 export const Checkbox = ({ id, label }: Props) => {
   // const checkboxRef = useRef(null);
@@ -16,5 +16,5 @@ export const Checkbox = ({ id, label }: Props) => {
         {label}
       </label>
     </div>
-  );
-};
+  )
+}

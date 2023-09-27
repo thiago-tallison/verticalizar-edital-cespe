@@ -1,31 +1,31 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
-import "./Examples.css";
-import examples from "../utils/examples";
+import './Examples.css'
+import examples from '../utils/examples'
 
 export const Examples = (props) => {
-  const [selectedOption, setSelectedOption] = useState("Selecione");
+  const [selectedOption, setSelectedOption] = useState('Selecione')
 
   const getOption = ([value, label]) => {
     return (
-      <option key={"op-" + value} value={label}>
+      <option key={'op-' + value} value={label}>
         {value}
       </option>
-    );
-  };
+    )
+  }
 
-  const options = [];
-  for (let el of Object.entries(examples)) {
-    const option = getOption(el);
-    options.push(option);
+  const options = []
+  for (const el of Object.entries(examples)) {
+    const option = getOption(el)
+    options.push(option)
   }
 
   const handleOnClose = () => {
-    props.onClose(selectedOption);
-  };
+    props.onClose(selectedOption)
+  }
 
   return (
-    <div className={`custom-model-main ${props.show ? "model-open" : ""}`}>
+    <div className={`custom-model-main ${props.show ? 'model-open' : ''}`}>
       <div className="custom-model-inner">
         <div onClick={handleOnClose} className="close-btn">
           ×
@@ -36,7 +36,7 @@ export const Examples = (props) => {
             <select
               value={selectedOption}
               onChange={(e) => {
-                setSelectedOption(e.target.value);
+                setSelectedOption(e.target.value)
               }}
               name="edital"
               id="edital"
@@ -52,5 +52,5 @@ export const Examples = (props) => {
       </div>
       <div onClick={handleOnClose} className="bg-overlay"></div>
     </div>
-  );
-};
+  )
+}

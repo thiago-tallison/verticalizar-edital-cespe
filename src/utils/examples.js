@@ -1,5 +1,5 @@
 const examples = {
-  "Polícia Rodoviária Federal - 2019": `23.2 CONHECIMENTOS
+  'Polícia Rodoviária Federal - 2019': `23.2 CONHECIMENTOS
   23.2.1 Nas provas, serão avaliados, além de habilidades, conhecimentos conforme descritos a seguir.
   BLOCO I
   LÍNGUA PORTUGUESA: 1 Compreensão e interpretação de textos de gêneros variados. 2 Reconhecimento
@@ -107,7 +107,7 @@ const examples = {
   responsabilidade do Estado. 4 Direitos humanos na Constituição Federal. 5 Política Nacional de Direitos
   Humanos. 6 A Constituição brasileira e os tratados internacionais de direitos humanos.`,
 
-  "Agente da Polícia Federal": `4.2.4 CARGO 12: AGENTE DE POLÍCIA FEDERAL
+  'Agente da Polícia Federal': `4.2.4 CARGO 12: AGENTE DE POLÍCIA FEDERAL
   BLOCO I
   LÍNGUA PORTUGUESA: 1 Compreensão e interpretação de textos de gêneros variados. 2 Reconhecimento de
   tipos e gêneros textuais. 3 Domínio da ortografia oficial. 4 Domínio dos mecanismos de coesão textual. 4.1
@@ -214,7 +214,7 @@ const examples = {
   complementar e pronunciamentos do Comitê de Pronunciamentos Contábeis (CPC). 12 Norma Brasileira de
   Contabilidade - NBC TSP Estrutura Conceitual, de 23 de setembro de 2016.`,
 
-  "Técnico do Seguro Social": `14.2.1.3 CONHECIMENTOS BÁSICOS PARA O CARGO TÉCNICO DO SEGURO SOCIAL
+  'Técnico do Seguro Social': `14.2.1.3 CONHECIMENTOS BÁSICOS PARA O CARGO TÉCNICO DO SEGURO SOCIAL
   ÉTICA NO SERVIÇO PÚBLICO: 1 Código de Ética Profissional do Servidor Público Civil do Poder Executivo
   Federal: Decreto nº 1.171/1994 e Decreto nº 6.029/2007.
   REGIME JURÍDICO ÚNICO: 1 Lei 8.112/1990 e alterações, direitos e deveres do Servidor Público. 2 O
@@ -275,6 +275,6 @@ const examples = {
   de segurado. 11 Lei nº 8.212/1991 e alterações. 12 Lei nº 8.213/1991 e alterações. 13 Decreto nº 3.048, de
   06/05/1999 e alterações. 14 Lei de Assistência Social (LOAS): conteúdo; fontes e autonomia (Lei nº
   8.742/1993 e Decreto nº 6.214/2007 e alterações).`,
-};
+}
 
-export default examples;
+export default examples

@@ -1,21 +1,18 @@
-import React, { useState } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import React, { useState } from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import "./App.css";
-import "../globals.css";
-// import GlobalStyles from "../styles/GlobalStyles";
+import '../globals.css'
 
-import { Instructions } from "./Instructions";
-import Home from "./Home";
-import { Nav } from "./Nav";
-import { Layout } from "./layout";
+import { Instructions } from './Instructions'
+import Home from './Home'
+import { Layout } from './layout'
 
-const App = () => {
-  const [shouldShowExamples, setShouldShowExamples] = useState(false);
+export default function App() {
+  const [shouldShowExamples, setShouldShowExamples] = useState(false)
 
-  const handleOnExamplesClick = (option) => {
-    setShouldShowExamples(!shouldShowExamples);
-  };
+  const handleOnExamplesClick = () => {
+    setShouldShowExamples(!shouldShowExamples)
+  }
 
   return (
     <BrowserRouter>
@@ -36,7 +33,5 @@ const App = () => {
         </Route>
       </Switch>
     </BrowserRouter>
-  );
-};
-
-export default App;
+  )
+}

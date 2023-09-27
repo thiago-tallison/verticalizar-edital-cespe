@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 import {
   Select as ChadSelect,
@@ -6,19 +6,19 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from '@/components/ui/select'
 
 type SelectItemType = {
-  value: string;
-  label: string;
-};
+  value: string
+  label: string
+}
 
 type Props = {
-  id: string;
-  label: string;
-  placeholder: string;
-  items: SelectItemType[];
-};
+  id: string
+  label: string
+  placeholder: string
+  items: SelectItemType[]
+}
 
 export function Select({ items, placeholder }: Props) {
   return (
@@ -34,5 +34,5 @@ export function Select({ items, placeholder }: Props) {
         ))}
       </SelectContent>
     </ChadSelect>
-  );
+  )
 }

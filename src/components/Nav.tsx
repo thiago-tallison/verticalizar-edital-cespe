@@ -1,27 +1,27 @@
-import { NavLink } from "react-router-dom";
-import React from "react";
+import { NavLink } from 'react-router-dom'
+import React from 'react'
 
-import { buttonVariants } from "./ui/button";
-import { Github } from "lucide-react";
+import { buttonVariants } from './ui/button'
+import { Github } from 'lucide-react'
 
 type NavProps = {
-  onClick?: () => void;
-  showExamples?: boolean;
-};
+  onClick?: () => void
+  showExamples?: boolean
+}
 
 type ExamplesNavLinkProps = {
-  show: boolean;
-  onClick: () => void;
-};
+  show: boolean
+  onClick: () => void
+}
 
 function ExamplesNavLink({ show, onClick }: ExamplesNavLinkProps) {
-  if (!show) return null;
+  if (!show) return null
 
   return (
     <li>
       <span onClick={onClick}>Exemplos</span>
     </li>
-  );
+  )
 }
 
 export function Nav({ onClick, showExamples }: NavProps) {
@@ -44,11 +44,11 @@ export function Nav({ onClick, showExamples }: NavProps) {
         target="_blank"
         rel="noopener noreferrer"
         href="https://github.com/thiago-tallison/verticalizar-edital"
-        className={buttonVariants({ variant: "outline" })}
+        className={buttonVariants({ variant: 'outline' })}
       >
         <Github className="w-4 h-4 mr-2" />
         Github
       </a>
     </nav>
-  );
+  )
 }

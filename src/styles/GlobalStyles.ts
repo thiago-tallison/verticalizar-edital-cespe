@@ -1,4 +1,4 @@
-import { createGlobalStyle  } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
   * {
@@ -653,4 +653,4 @@ export default createGlobalStyle`
   /* Larger than Desktop HD */
   @media (min-width: 1200px) {
   }
-`;
+`

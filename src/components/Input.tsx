@@ -1,14 +1,14 @@
-import React, { useRef } from "react";
-import { Textarea as ChadTextarea, TextareaProps } from "./ui/textarea";
-import { Copy, Trash } from "lucide-react";
+import React, { useRef } from 'react'
+import { Textarea as ChadTextarea, TextareaProps } from './ui/textarea'
+import { Copy, Trash } from 'lucide-react'
 
 type Props = {
-  id: string;
-  label: string;
-  placeholder: string;
-  copy?: boolean;
-  deleteAll?: boolean;
-} & TextareaProps;
+  id: string
+  label: string
+  placeholder: string
+  copy?: boolean
+  deleteAll?: boolean
+} & TextareaProps
 
 export const Textarea = ({
   id,
@@ -18,17 +18,17 @@ export const Textarea = ({
   deleteAll,
   ...rest
 }: Props) => {
-  const textAreaRef = useRef(null);
+  const textAreaRef = useRef(null)
 
   const copiar = () => {
-    textAreaRef.current.select();
-    document.execCommand("copy");
-    textAreaRef.current.target.focus();
-  };
+    textAreaRef.current.select()
+    document.execCommand('copy')
+    textAreaRef.current.target.focus()
+  }
 
   const deletarTudo = () => {
-    textAreaRef.current.value = "";
-  };
+    textAreaRef.current.value = ''
+  }
 
   return (
     <div className="relative">
@@ -57,5 +57,5 @@ export const Textarea = ({
         )}
       </div>
     </div>
-  );
-};
+  )
+}

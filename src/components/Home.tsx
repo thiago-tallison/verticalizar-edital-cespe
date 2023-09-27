@@ -1,57 +1,49 @@
-import React, { useState } from "react";
-import "./Home.css";
-import { Examples } from "./Examples";
-import { Textarea } from "./Input";
-import { DownloadEditalButtons } from "./DownloadEditalButtons";
-import Config from "./Config/index";
-import format from "../utils/format";
-import { textToCSV } from "../utils/converter";
+import React, { useState } from 'react'
+import './Home.css'
+import { Examples } from './Examples'
+import { Textarea } from './Input'
+import { DownloadEditalButtons } from './DownloadEditalButtons'
+import Config from './Config/index'
+import format from '../utils/format'
+import { textToCSV } from '../utils/converter'
 
 interface HomeProps {
-  shouldShowExamples: boolean;
-  handleOnClose: () => void;
+  shouldShowExamples: boolean
+  handleOnClose: () => void
 }
 
 function Home({ handleOnClose, shouldShowExamples }: HomeProps) {
-  const [input, setInput] = useState<string>("");
-  const [output, setOutput] = useState<string>("");
-  const [formatedText, setFormatedText] = useState<string>("");
+  const [input, setInput] = useState<string>('')
+  const [output, setOutput] = useState<string>('')
+  const [formatedText] = useState<string>('')
 
   const onClose = (option: string) => {
-    setInput(option !== "Selecione" ? option : "");
-    handleOnClose();
-  };
-
-  const onInputChange = (value: string) => {
-    setInput(value);
-  };
-
-  const onOutputChange = (value: string) => {
-    setOutput(value);
-  };
+    setInput(option !== 'Selecione' ? option : '')
+    handleOnClose()
+  }
 
   const handleOnClickProcessar = (configState: any) => {
-    const { tabing: espacamento, noNumeration: semNumeracao } = configState;
+    const { tabing: espacamento, noNumeration: semNumeracao } = configState
     const formattedText = format({
       texto: input,
       numeracao: semNumeracao,
       espacamento,
-    });
-    setOutput(formattedText);
-  };
+    })
+    setOutput(formattedText)
+  }
 
   const downloadAsCsv = () => {
-    const csvData = textToCSV(output);
-    if (csvData === "") return;
-    const element = document.createElement("a");
+    const csvData = textToCSV(output)
+    if (csvData === '') return
+    const element = document.createElement('a')
     element.href =
-      "data:text/plain;charset=utf-8," + encodeURIComponent(csvData);
-    element.setAttribute("download", "Edital.csv");
-    element.style.display = "none";
-    document.body.appendChild(element);
-    element.click();
-    document.body.removeChild(element);
-  };
+      'data:text/plain;charset=utf-8,' + encodeURIComponent(csvData)
+    element.setAttribute('download', 'Edital.csv')
+    element.style.display = 'none'
+    document.body.appendChild(element)
+    element.click()
+    document.body.removeChild(element)
+  }
 
   return (
     <div className="w-full">
@@ -84,7 +76,7 @@ function Home({ handleOnClose, shouldShowExamples }: HomeProps) {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home

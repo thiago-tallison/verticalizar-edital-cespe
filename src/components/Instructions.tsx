@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import { Separator } from "@/components/ui/separator";
+import { Separator } from '@/components/ui/separator'
 
 export function Instructions() {
   return (
@@ -46,11 +46,11 @@ export function Instructions() {
         ponto final. Esse erro de digitação compromete o perfeito funcionamento
         do algoritmo, o qual pode não formatar o texto conforme o esperado.
         Assim, recomendamos que confira o resultado obtido. Bons estudos,
-        concurseiro{" "}
+        concurseiro{' '}
         <span role="img" aria-label="emojis">
           📚☕💪
         </span>
       </p>
     </div>
-  );
+  )
 }

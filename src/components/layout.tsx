@@ -1,9 +1,9 @@
-import { Nav } from "./Nav";
-import React from "react";
+import { Nav } from './Nav'
+import React from 'react'
 
 type LayoutProps = {
-  children: React.ReactNode;
-};
+  children: React.ReactNode
+}
 
 export function Layout({ children }: LayoutProps) {
   return (
@@ -15,5 +15,5 @@ export function Layout({ children }: LayoutProps) {
         {children}
       </main>
     </div>
-  );
+  )
 }

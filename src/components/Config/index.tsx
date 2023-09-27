@@ -1,27 +1,27 @@
-import React, { useState } from "react";
-import { Select } from "../select";
-import { Checkbox } from "../checkbox";
-import { Button } from "../ui/button";
+import React, { useState } from 'react'
+import { Select } from '../select'
+import { Checkbox } from '../checkbox'
+import { Button } from '../ui/button'
 
 type ConfigProps = {
-  handleOnClick: Function;
-};
+  handleOnClick: () => void
+}
 
 function Config({ handleOnClick }: ConfigProps) {
-  const [tabing, setTabing] = useState(3);
-  const [noNumeration, setNoNumeration] = useState(false);
+  const [tabing, setTabing] = useState(3)
+  const [noNumeration, setNoNumeration] = useState(false)
 
   function handleOnChangeNoNumeration(event) {
-    setNoNumeration(!noNumeration);
+    setNoNumeration(!noNumeration)
   }
 
   function handleOnChangeTabing({ target }) {
-    const { value } = target;
-    setTabing(value);
+    const { value } = target
+    setTabing(value)
   }
 
   function handleOnClickProccess() {
-    handleOnClick({ tabing, noNumeration });
+    handleOnClick({ tabing, noNumeration })
   }
 
   return (
@@ -32,16 +32,16 @@ function Config({ handleOnClick }: ConfigProps) {
         id="numero-espacos"
         label="Espaçamento"
         items={[
-          { value: "2", label: "2 Espaços" },
-          { value: "3", label: "3 Espaços" },
-          { value: "4", label: "4 Espaços" },
+          { value: '2', label: '2 Espaços' },
+          { value: '3', label: '3 Espaços' },
+          { value: '4', label: '4 Espaços' },
         ]}
         placeholder="Selecione"
       />
 
       <Button onClick={handleOnClickProccess}>Processar</Button>
     </div>
-  );
+  )
 }
 
-export default Config;
+export default Config
