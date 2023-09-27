@@ -1,59 +1,49 @@
-import React, { Component } from "react";
-
+import React, { useState } from "react";
 import "./Home.css";
-
 import { Examples } from "./Examples";
-import { Input } from "./Input";
+import { Textarea } from "./Input";
 import { DownloadEditalButtons } from "./DownloadEditalButtons";
 import Config from "./Config/index";
-
 import format from "../utils/format";
 import { textToCSV } from "../utils/converter";
 
-export default class Home extends Component {
-  constructor(props) {
-    super(props);
+interface HomeProps {
+  shouldShowExamples: boolean;
+  handleOnClose: () => void;
+}
 
-    this.state = {
-      input: "",
-      output: "",
-      shouldShowExamples: this.props.shouldShowExamples,
-    };
+function Home({ handleOnClose, shouldShowExamples }: HomeProps) {
+  const [input, setInput] = useState<string>("");
+  const [output, setOutput] = useState<string>("");
+  const [formatedText, setFormatedText] = useState<string>("");
 
-    this.onInputChange = this.onInputChange.bind(this);
-    this.onOutputChange = this.onOutputChange.bind(this);
-    this.handleOnClickProcessar = this.handleOnClickProcessar.bind(this);
-    this.downloadAsCsv = this.downloadAsCsv.bind(this);
-    this.onClose = this.onClose.bind(this);
-  }
+  const onClose = (option: string) => {
+    setInput(option !== "Selecione" ? option : "");
+    handleOnClose();
+  };
 
-  onClose(option) {
-    this.setState({ input: option !== "Selecione" ? option : "" });
-    this.props.handleOnClose();
-  }
+  const onInputChange = (value: string) => {
+    setInput(value);
+  };
 
-  onInputChange(value) {
-    this.setState({ input: value });
-  }
+  const onOutputChange = (value: string) => {
+    setOutput(value);
+  };
 
-  onOutputChange(value) {
-    this.setState({ output: value });
-  }
-
-  handleOnClickProcessar(configState) {
+  const handleOnClickProcessar = (configState: any) => {
     const { tabing: espacamento, noNumeration: semNumeracao } = configState;
-    const formatedText = format({
-      texto: this.state.input,
+    const formattedText = format({
+      texto: input,
       numeracao: semNumeracao,
       espacamento,
     });
-    this.setState({ output: formatedText });
-  }
+    setOutput(formattedText);
+  };
 
-  downloadAsCsv() {
-    const csvData = textToCSV(this.state.output);
+  const downloadAsCsv = () => {
+    const csvData = textToCSV(output);
     if (csvData === "") return;
-    var element = document.createElement("a");
+    const element = document.createElement("a");
     element.href =
       "data:text/plain;charset=utf-8," + encodeURIComponent(csvData);
     element.setAttribute("download", "Edital.csv");
@@ -61,42 +51,40 @@ export default class Home extends Component {
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
-  }
+  };
 
-  render() {
-    return (
-      <div>
-        <Examples onClose={this.onClose} show={this.props.shouldShowExamples} />
-        <Input
-          copyText={() => {}}
-          value={this.state.input}
+  return (
+    <div className="w-full">
+      <Examples onClose={onClose} show={shouldShowExamples} />
+      <div className="flex flex-col mb-10">
+        <Textarea
           placeholder="Cole as disciplinas do edital aqui. Cuidado para não inserir as páginas do documento."
-          onInputChange={this.onInputChange}
-          label={"disciplinas do edital"}
+          label="Disciplinas do edital"
           deleteAll={true}
+          id="input"
         />
-        <Config handleOnClick={this.handleOnClickProcessar} />
-        <Input
-          copyText={this.copyText}
-          value={this.state.output}
-          placeholder={""}
-          onInputChange={this.onOutputChange}
-          formatedText={this.state.formatedText}
-          label={"resultado"}
-          copy={true}
-          deleteAll={true}
-        />
-        <div className="container">
-          <div className="row">
-            <div className="offset-by-one ten columns download-buttons">
-              <DownloadEditalButtons
-                handleOnClick={this.downloadAsCsv}
-                label={".csv"}
-              />
-            </div>
+
+        <Config handleOnClick={handleOnClickProcessar} />
+      </div>
+
+      <Textarea
+        id="output"
+        placeholder={formatedText}
+        readOnly
+        label="Resultado"
+        copy={true}
+        deleteAll={true}
+      />
+
+      <div className="container">
+        <div className="row">
+          <div className="offset-by-one ten columns download-buttons">
+            <DownloadEditalButtons handleOnClick={downloadAsCsv} label=".csv" />
           </div>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
+
+export default Home;
