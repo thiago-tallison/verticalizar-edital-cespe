@@ -11,7 +11,7 @@ export function Layout({ children }: LayoutProps) {
       <header className="flex items-center justify-center border-b px-6 py-3">
         <Nav />
       </header>
-      <main>{children}</main>
+      <main className="max-w-5xl flex flex-1 self-center">{children}</main>
     </div>
   );
 }
