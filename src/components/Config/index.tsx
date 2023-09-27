@@ -1,14 +1,7 @@
 import React, { useState } from "react";
-
-import {
-  Container,
-  Row,
-  TenColumns,
-  NoNumeration,
-  Tabing,
-  Proccess,
-} from "./styles";
 import { Select } from "../select";
+import { Checkbox } from "../checkbox";
+import { Button } from "../ui/button";
 
 type ConfigProps = {
   handleOnClick: Function;
@@ -32,7 +25,9 @@ function Config({ handleOnClick }: ConfigProps) {
   }
 
   return (
-    <div>
+    <div className="flex flex-col gap-4 mt-4">
+      <Checkbox id="sem-numeracao" label="Sem numeração" />
+
       <Select
         id="numero-espacos"
         label="Espaçamento"
@@ -44,14 +39,7 @@ function Config({ handleOnClick }: ConfigProps) {
         placeholder="Selecione"
       />
 
-      <label htmlFor="sem-numeracao">
-        <input
-          onChange={handleOnChangeNoNumeration}
-          type="checkbox"
-          id="sem-numeracao"
-        />
-        <span className="label-body">Sem numeração</span>
-      </label>
+      <Button onClick={handleOnClickProccess}>Processar</Button>
     </div>
   );
 }
