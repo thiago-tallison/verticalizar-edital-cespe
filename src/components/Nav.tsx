@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import React from "react";
 
 import "./Nav.css";
-import { ReactComponent as GithubLogo } from "./icons8-github.svg";
+import GithubLogo from "./icons8-github.svg";
 
 export const Nav = (props) => {
   const ExamplesNavLink = ({ show }) =>
@@ -32,7 +32,7 @@ export const Nav = (props) => {
         href="https://github.com/thiago-tallison/verticalizar-edital"
         className="social"
       >
-        <GithubLogo className="git-logo" />
+        <img src={GithubLogo} alt="React Logo" />
       </a>
     </nav>
   );

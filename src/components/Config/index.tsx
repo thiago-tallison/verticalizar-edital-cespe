@@ -9,7 +9,11 @@ import {
   Proccess,
 } from "./styles";
 
-function Config({ handleOnClick }) {
+type ConfigProps = {
+  handleOnClick: Function;
+};
+
+function Config({ handleOnClick }: ConfigProps) {
   const [tabing, setTabing] = useState(3);
   const [noNumeration, setNoNumeration] = useState(false);
 
