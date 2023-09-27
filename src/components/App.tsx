@@ -8,6 +8,7 @@ import "../globals.css";
 import { Instructions } from "./Instructions";
 import Home from "./Home";
 import { Nav } from "./Nav";
+import { Layout } from "./layout";
 
 const App = () => {
   const [shouldShowExamples, setShouldShowExamples] = useState(false);
@@ -20,21 +21,18 @@ const App = () => {
     <BrowserRouter>
       <Switch>
         <Route path="/instructions">
-          <Nav onClick={handleOnExamplesClick} />
-          <Instructions />
-        </Route>
-
-        <Route path="/instructions">
-          <Nav onClick={handleOnExamplesClick} />
-          <Instructions />
+          <Layout>
+            <Instructions />
+          </Layout>
         </Route>
 
         <Route path="/">
-          <Nav showExamples onClick={handleOnExamplesClick} />
-          <Home
-            handleOnClose={handleOnExamplesClick}
-            shouldShowExamples={shouldShowExamples}
-          />
+          <Layout>
+            <Home
+              handleOnClose={handleOnExamplesClick}
+              shouldShowExamples={shouldShowExamples}
+            />
+          </Layout>
         </Route>
       </Switch>
     </BrowserRouter>

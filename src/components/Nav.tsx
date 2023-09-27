@@ -1,39 +1,54 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
 
-import "./Nav.css";
-import GithubLogo from "./icons8-github.svg";
+import { buttonVariants } from "./ui/button";
+import { Github } from "lucide-react";
 
-export const Nav = (props) => {
-  const ExamplesNavLink = ({ show }) =>
-    show ? (
-      <li className="link">
-        <span onClick={props.onClick}>Exemplos</span>
-      </li>
-    ) : null;
+type NavProps = {
+  onClick?: () => void;
+  showExamples?: boolean;
+};
+
+type ExamplesNavLinkProps = {
+  show: boolean;
+  onClick: () => void;
+};
+
+function ExamplesNavLink({ show, onClick }: ExamplesNavLinkProps) {
+  if (!show) return null;
+
   return (
-    <nav className="navbar">
-      <ul className="links">
-        <li className="link">
+    <li>
+      <span onClick={onClick}>Exemplos</span>
+    </li>
+  );
+}
+
+export function Nav({ onClick, showExamples }: NavProps) {
+  return (
+    <nav className="flex flex-1 items-center justify-between md:max-w-5xl">
+      <ul className="flex gap-3">
+        <li>
           <NavLink activeClassName="active" exact to="/">
             Início
           </NavLink>
         </li>
-        <li className="link">
+        <li>
           <NavLink activeClassName="active" exact to="/instructions">
             Instruções
           </NavLink>
         </li>
-        <ExamplesNavLink show={props.showExamples} />
+        <ExamplesNavLink show={showExamples} onClick={onClick} />
       </ul>
       <a
         target="_blank"
         rel="noopener noreferrer"
         href="https://github.com/thiago-tallison/verticalizar-edital"
-        className="social"
+        className={buttonVariants({ variant: "outline" })}
       >
-        <img src={GithubLogo} alt="React Logo" />
+        <Github className="w-4 h-4 mr-2" />
+        Github
       </a>
     </nav>
   );
-};
+}

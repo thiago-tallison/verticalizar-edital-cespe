@@ -65,7 +65,7 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div className="Home">
+      <div>
         <Examples onClose={this.onClose} show={this.props.shouldShowExamples} />
         <Input
           copyText={() => {}}
