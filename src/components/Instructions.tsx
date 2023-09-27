@@ -1,8 +1,6 @@
-import React from "react";
-
 import "./Instructions.css";
 
-export const Instructions = () => {
+export function Instructions() {
   return (
     <div className="Instructions">
       <div className="container">
@@ -68,4 +66,4 @@ export const Instructions = () => {
       </div>
     </div>
   );
-};
+}

@@ -33,7 +33,7 @@ dependencies:
     specifier: ^3.10.0
     version: 3.11.0(react@16.14.0)
   react-router-dom:
-    specifier: ^5.2.0
+    specifier: ^5.3.4
     version: 5.3.4(react@16.14.0)
   styled-components:
     specifier: ^5.1.1
