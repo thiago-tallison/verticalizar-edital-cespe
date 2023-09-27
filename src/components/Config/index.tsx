@@ -8,6 +8,7 @@ import {
   Tabing,
   Proccess,
 } from "./styles";
+import { Select } from "../select";
 
 type ConfigProps = {
   handleOnClick: Function;
@@ -31,35 +32,27 @@ function Config({ handleOnClick }: ConfigProps) {
   }
 
   return (
-    <Container>
-      <Row>
-        <TenColumns>
-          <NoNumeration>
-            <label htmlFor="sem-numeracao">
-              <input
-                onChange={handleOnChangeNoNumeration}
-                type="checkbox"
-                id="sem-numeracao"
-              />
-              <span className="label-body">Sem numeração</span>
-            </label>
-          </NoNumeration>
+    <div>
+      <Select
+        id="numero-espacos"
+        label="Espaçamento"
+        items={[
+          { value: "2", label: "2 Espaços" },
+          { value: "3", label: "3 Espaços" },
+          { value: "4", label: "4 Espaços" },
+        ]}
+        placeholder="Selecione"
+      />
 
-          <Tabing>
-            <select
-              id="numero-espacos"
-              value={tabing}
-              onChange={handleOnChangeTabing}
-            >
-              <option value="2">2 Espaços</option>
-              <option value="3">3 Espaços</option>
-              <option value="4">4 Espaços</option>
-            </select>
-          </Tabing>
-          <Proccess onClick={handleOnClickProccess}>Processar</Proccess>
-        </TenColumns>
-      </Row>
-    </Container>
+      <label htmlFor="sem-numeracao">
+        <input
+          onChange={handleOnChangeNoNumeration}
+          type="checkbox"
+          id="sem-numeracao"
+        />
+        <span className="label-body">Sem numeração</span>
+      </label>
+    </div>
   );
 }
 
